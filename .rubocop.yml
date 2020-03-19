@@ -43,3 +43,6 @@ Style/StringLiterals:
 # I think we disagree with GDS on this one
 Style/MethodCalledOnDoEndBlock:
   Enabled: false
+
+Lint/Debugger:
+  Enabled: false

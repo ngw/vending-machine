@@ -1,0 +1,27 @@
+products:
+  Moloko with Vellocet: 
+    price: 10
+    quantity: 2
+  Moloko with Synthemesc: 
+    price: 12.25
+    quantity: 4
+  Moloko with Drencrom: 
+    price: 15.85
+    quantity: 1
+  Orange with knives: 
+    price: 5
+    quantity: 6
+  Ultraviolence booster:
+    price: 2.50
+    quantity: 10
+
+change:
+  £2: 6
+  £1: 10
+  50p: 25
+  20p: 30
+  10p: 50
+  5p: 60
+  2p: 70
+  1p: 80
+  

@@ -2,7 +2,8 @@
 
 source 'https://rubygems.org'
 
-gem 'tty-prompt'
+gem 'money'
+gem 'pry'
 
 group :development, :test do
   gem 'rspec'
