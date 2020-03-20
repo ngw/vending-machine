@@ -13,7 +13,7 @@ describe VendingMachine::Importer do
     end
 
     it 'returns products' do
-      expect(products.first).to be_a(VendingMachine::Product)
+      expect(products.values.first).to be_a(VendingMachine::Product)
     end
   end
 
@@ -21,7 +21,7 @@ describe VendingMachine::Importer do
     let(:change) { importer.call[1] }
 
     it 'returns the right amount of coins' do
-      expect(change.coins.count).to eq(8)
+      expect(change.coins.count).to eq(2)
     end
 
     it 'returns change' do

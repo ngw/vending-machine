@@ -9,15 +9,27 @@ module VendingMachine
     end
 
     def call
-      puts <<~HELP
-        COMMANDS: restart CONFIGURATION_YAML_PATH
-      HELP
+      menu
       binding.pry
+    end
+
+    def menu
+      puts <<~MENU
+        #{@engine}
+
+        COMMANDS: restart CONFIGURATION_YAML_PATH
+                  buy ITEM_CODE, "MONEY"
+                  exit
+      MENU
     end
 
     def restart!(configuration_path:)
       @engine = Engine.new(init_path: configuration_path)
     end
     alias restart restart!
+
+    def buy(code:, amount:)
+      @engine.buy(code, amount)
+    end
   end
 end

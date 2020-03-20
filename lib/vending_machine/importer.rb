@@ -13,11 +13,12 @@ module VendingMachine
     private
 
     def products
-      @config['products'].collect do |name, data|
+      product_list = @config['products'].collect do |name, data|
         Product.new(name: name,
                     price: data['price'],
                     quantity: data['quantity'])
       end
+      Hash[(1..product_list.size).zip product_list]
     end
 
     def change
