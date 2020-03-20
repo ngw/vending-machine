@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'monetize'
 gem 'money'
 gem 'pry'
 
